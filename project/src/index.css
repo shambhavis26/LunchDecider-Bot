@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.floating-emoji {
+  animation: float 3s ease-in-out infinite;
+  user-select: none;
+}
+
+.bg-ketchup {
+  background-color: #D62828;
+}
+
+.bg-mustard {
+  background-color: #F4B740;
+}
+
+.text-ketchup {
+  color: #D62828;
+}
+
+.text-mustard {
+  color: #F4B740;
+}
+
+.border-ketchup {
+  border-color: #D62828;
+}
+
+.border-mustard {
+  border-color: #F4B740;
+}
+
+.hover\:bg-ketchup:hover {
+  background-color: #D62828;
+}
+
+.hover\:bg-mustard:hover {
+  background-color: #F4B740;
+}
+
+.from-ketchup {
+  --tw-gradient-from: #D62828;
+}
+
+.to-mustard {
+  --tw-gradient-to: #F4B740;
+}
